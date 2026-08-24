@@ -1,0 +1,2 @@
+cagr_strategy_%,cagr_benchmark_%,alpha_annuel_%,alpha_jensen_%,volatilite_strategy_%,volatilite_benchmark_%,sharpe_strategy,sharpe_benchmark,sortino_strategy,max_drawdown_strategy_%,max_drawdown_benchmark_%,calmar_strategy,beta,tracking_error_%,ratio_information,turnover_annuel_%,cout_turnover_annuel_bps,hit_rate_quotidien_%,nombre_jours
+18.64,17.32,1.31,1.31,18.86,18.81,0.829,0.762,1.033,-22.38,-22.97,0.833,1.001,1.19,1.104,461.8,23.1,37.09,1321
