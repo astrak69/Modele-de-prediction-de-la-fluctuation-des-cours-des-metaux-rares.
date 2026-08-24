@@ -11,7 +11,59 @@ Ce projet implémente un système institutionnel complet de recherche quantitati
 
 
 1. Synthèse des performances & ratios institutionnels
-Indicateur financierStratégie tactique CDGBenchmark Buy-and-HoldÉcart / AlphaRendement annuel composé — CAGR15,64 %14,43 %+1,21 % / anAlpha de Jensen ajusté du risque+1,23 %0,00 %+1,23 %Volatilité annualisée18,69 %18,68 %+0,01 %Ratio de Sharpe — Rf = 3,0 %0,6760,612+0,064Ratio de Sortino — risque baissier0,8410,760+0,081Maximum Drawdown-22,26 %-22,97 %+0,71 % d'atténuationRatio de Calmar0,7030,628+0,075Bêta vs benchmark0,9981,000NeutreTracking Error1,22 %—Risque maîtriséRatio d'information — IR0,995—Qualité d'alpha élevéeTurnover annuel moyen508,3 %0,0 %Environ 2,0 % / jourCoût total de rebalancement25,4 bps / an0,0 bpsIntégré en netNote : tous les résultats sont présentés nets des coûts de turnover, estimés à 5 bps aller-retour par transaction.
+Indicateur financier
+Stratégie tactique CDG
+Benchmark Buy-and-Hold
+Écart / Alpha
+Rendement annuel composé — CAGR
+15,64 %
+14,43 %
++1,21 % / an
+Alpha de Jensen ajusté du risque
++1,23 %
+0,00 %
++1,23 %
+Volatilité annualisée
+18,69 %
+18,68 %
++0,01 %
+Ratio de Sharpe — Rf = 3,0 %
+0,676
+0,612
++0,064
+Ratio de Sortino — risque baissier
+0,841
+0,760
++0,081
+Maximum Drawdown
+-22,26 %
+-22,97 %
++0,71 % d'atténuation
+Ratio de Calmar
+0,703
+0,628
++0,075
+Bêta vs benchmark
+0,998
+1,000
+Neutre
+Tracking Error
+1,22 %
+—
+Risque maîtrisé
+Ratio d'information — IR
+0,995
+—
+Qualité d'alpha élevée
+Turnover annuel moyen
+508,3 %
+0,0 %
+Environ 2,0 % / jour
+Coût total de rebalancement
+25,4 bps / an
+0,0 bps
+Intégré en net
+Note : tous les résultats sont présentés nets des coûts de turnover, estimés à 5 bps aller-retour par transaction.
 2. Démarrage rapide & exécution en un clic
 A. Prérequis & installation
 # 1. Cloner ou ouvrir le dossier du projet
@@ -27,7 +79,25 @@ python run_pipeline.py --open
 # Recalcul rapide sur l'historique local, sans retéléchargement des données
 python run_pipeline.py --skip-download
 3. Livrables & tableaux de bord
-LivrableDescriptionFormatdashboard.htmlTableau de bord de gestion : recommandation tactique du jour, allocation actualisée, attribution de performance, simulateur de stress tests et suivi du risque de change USD/MAD.Web interactif — Chart.jsbacktest_report.htmlRapport quantitatif exhaustif : analyse individuelle de chaque signal à 1, 5, 10, 20 et 60 jours, tests de significativité statistique (valeur p, statistique t, bootstrap) et validation walk-forward.Web interactifNOTE_METHODOLOGIQUE_CDG.mdNote méthodologique institutionnelle : document financier complet destiné au Comité d'Investissement.Markdown / PDFportfolio_timeseries.csvHistorique quotidien complet des valeurs liquidatives, drawdowns, poids tactiques et rendements.CSVportfolio_backtest_results.csvTableau de synthèse de l'ensemble des métriques institutionnelles.CSV4. Architecture du projet
+Livrable
+Description
+Format
+dashboard.html
+Tableau de bord de gestion : recommandation tactique du jour, allocation actualisée, attribution de performance, simulateur de stress tests et suivi du risque de change USD/MAD.
+Web interactif — Chart.js
+backtest_report.html
+Rapport quantitatif exhaustif : analyse individuelle de chaque signal à 1, 5, 10, 20 et 60 jours, tests de significativité statistique (valeur p, statistique t, bootstrap) et validation walk-forward.
+Web interactif
+NOTE_METHODOLOGIQUE_CDG.md
+Note méthodologique institutionnelle : document financier complet destiné au Comité d'Investissement.
+Markdown / PDF
+portfolio_timeseries.csv
+Historique quotidien complet des valeurs liquidatives, drawdowns, poids tactiques et rendements.
+CSV
+portfolio_backtest_results.csv
+Tableau de synthèse de l'ensemble des métriques institutionnelles.
+CSV
+4. Architecture du projet
 metaux_project/
 │
 ├── README.md                      # Guide d'accueil et synthèse des performances
@@ -46,7 +116,27 @@ metaux_project/
 1. Contraintes AMMC / CDG Capital
 • Règle stricte de positions longues uniquement, sans vente à découvert.
 Bornes d'allocation strictes :
-ActifBorne minimaleBorne maximaleÉcart tactique maximalOr30 %65 %±15 %Argent8 %25 %±8 %Cuivre15 %40 %±10 %Cash / TMP2 %25 %Variable d'ajustement2. Métriques de risque — VaR & Bâle III
+Actif
+Borne minimale
+Borne maximale
+Écart tactique maximal
+Or
+30 %
+65 %
+±15 %
+Argent
+8 %
+25 %
+±8 %
+Cuivre
+15 %
+40 %
+±10 %
+Cash / TMP
+2 %
+25 %
+Variable d'ajustement
+2. Métriques de risque — VaR & Bâle III
 • VaR 95 % — 1 jour : -1,92 %
 • VaR 99 % — 1 jour : -2,88 %
 • VaR réglementaire 99 % — 10 jours, approche Bâle : -9,11 %
@@ -60,9 +150,9 @@ Le module permet également une analyse comparative entre :
 • un portefeuille couvert via contrats forward FX.
 
 CDG Capital — Direction Gestion d'Actifs
-Usage interne exclusif — Recherche Quantitative & Stratégie d'Investissement
+ Recherche Quantitative & Stratégie d'Investissement
 
 CDG Capital Gestion — Recherche Quantitative
 
-Page 1 / 4   —   Usage interne exclusif
+
 
