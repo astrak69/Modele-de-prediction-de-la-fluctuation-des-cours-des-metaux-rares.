@@ -147,7 +147,7 @@ def generate_manager_dashboard_html(output_file: str = "dashboard.html"):
   <header>
     <div class="logo-box">
       <h1>🏛️ CDG CAPITAL GESTION — DESK MÉTAUX</h1>
-      <p>Moteur d'Allocation Tactique & Analyse des Risques Réglementaires (AMMC / Bâle III)</p>
+      <p>Moteur d'Allocation Tactique & Analyse des Risques Réglementaires (Bâle III)</p>
     </div>
     <div class="date-badge">📅 Données au : {last_date_str}</div>
   </header>
@@ -220,7 +220,7 @@ def generate_manager_dashboard_html(output_file: str = "dashboard.html"):
       </div>
 
       <div style="font-size:12px; color:var(--text-muted); margin-top:14px; line-height:1.4;">
-        <b>Contraintes AMMC / CDG :</b> Or [30%-65%], Argent [8%-25%], Cuivre [15%-40%], Cash Min 2%.
+        <b>Contraintes réglementaires / CDG :</b> Or [30%-65%], Argent [8%-25%], Cuivre [15%-40%], Cash Min 2%.
       </div>
     </div>
   </div>
